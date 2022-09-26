@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import ClassA from './components/ClassA';
 /* import User from './components/User'; */
 import ExportDiff, {A, B} from './components/ExportDiff';
+import LifecycleA from './components/lifecycle-methods-demo/LifecycleA';
+
 
 
 
@@ -30,6 +32,7 @@ const App = () => {
       <A />
       <B />
       <ExportDiff></ExportDiff>
+      <LifecycleA></LifecycleA>
     </div>
   );
 }
