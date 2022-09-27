@@ -24,6 +24,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>Welcome</h1>
+      <h1>HELLO</h1>
       {name1} - {userText}
       <h2>It is {new Date().toLocaleTimeString()}.</h2>
       <button onClick={handleClick}>Change Name</button>
