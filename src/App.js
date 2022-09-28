@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import ClassA from './components/ClassA';
 /* import User from './components/User'; */
 import ExportDiff, {A, B} from './components/ExportDiff';
+import Func from './components/Func';
 
 
 
@@ -29,6 +30,7 @@ const App = () => {
       <A />
       <B />
       <ExportDiff></ExportDiff>
+      <Func></Func>
     </div>
   );
 }
