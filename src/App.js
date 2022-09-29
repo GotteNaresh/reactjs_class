@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import React, { useState, useEffect } from 'react';
-import ClassA from './components/ClassA';
+import logo from "./logo.svg";
+import "./App.css";
+import React, { useState, useEffect } from "react";
+import ClassA from "./components/ClassA";
 /* import User from './components/User'; */
-import ExportDiff, {A, B} from './components/ExportDiff';
-
-
+import ExportDiff, { A, B } from "./components/ExportDiff";
+import Hello from "./components/Hello";
 
 const App = () => {
-  const name = 'Naresh';
+  const name = "Naresh";
   const userText = <h2>Hello</h2>;
   //name = 'ramesh';
   const [name1, setName] = useState(name);
   const [currTimer, setCurrTimer] = useState(new Date());
-  const handleClick = () => setName('ramesh');
+  const handleClick = () => setName("ramesh");
   useEffect(() => {
     //setName('Suresh');
     setInterval(setCurrTimer(new Date()), 1000);
-  }, [currTimer])
-  
+  }, [currTimer]);
+
   return (
     <div className="App">
       {name1} - {userText}
@@ -29,8 +28,9 @@ const App = () => {
       <A />
       <B />
       <ExportDiff></ExportDiff>
+      <Hello />
     </div>
   );
-}
+};
 
 export default App;
