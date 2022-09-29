@@ -5,6 +5,7 @@ import ClassA from "./components/ClassA";
 /* import User from './components/User'; */
 import ExportDiff, { A, B } from "./components/ExportDiff";
 import Hello from "./components/Hello";
+import Greet from "./components/Greet";
 
 const App = () => {
   const name = "Naresh";
@@ -29,6 +30,7 @@ const App = () => {
       <B />
       <ExportDiff></ExportDiff>
       <Hello />
+      <Greet />
     </div>
   );
 };
