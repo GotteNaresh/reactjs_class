@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import ClassA from './components/ClassA';
 /* import User from './components/User'; */
 import ExportDiff, {A, B} from './components/ExportDiff';
-
-
+import AddTwoNumbers from './components/basics/AddTwoNumbers';
+import IncreamentComponent from './components/basics/IncreamentComponent';
 
 const App = () => {
   const name = 'Naresh';
@@ -14,10 +14,12 @@ const App = () => {
   const [name1, setName] = useState(name);
   const [currTimer, setCurrTimer] = useState(new Date());
   const handleClick = () => setName('ramesh');
-  useEffect(() => {
+ /*  useEffect(() => {
     //setName('Suresh');
     setInterval(setCurrTimer(new Date()), 1000);
   }, [currTimer])
+ */
+  const [numbers, setNumbers] = useState([10,20]);
   
   return (
     <div className="App">
@@ -29,6 +31,9 @@ const App = () => {
       <A />
       <B />
       <ExportDiff></ExportDiff>
+      <AddTwoNumbers numbers={numbers} name={name1}/>
+      <IncreamentComponent />
+      
     </div>
   );
 }
