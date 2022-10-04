@@ -6,6 +6,8 @@ import ClassA from './components/ClassA';
 import ExportDiff, {A, B} from './components/ExportDiff';
 import AddTwoNumbers from './components/basics/AddTwoNumbers';
 import IncreamentComponent from './components/basics/IncreamentComponent';
+import Events from './components/handlingevents/Events';
+import Toggle from './components/handlingevents/Toggle';
 
 const App = () => {
   const name = 'Naresh';
@@ -33,7 +35,8 @@ const App = () => {
       <ExportDiff></ExportDiff>
       <AddTwoNumbers numbers={numbers} name={name1}/>
       <IncreamentComponent />
-      
+      <Events></Events>
+      <Toggle></Toggle>
     </div>
   );
 }
